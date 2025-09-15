@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3 - Wish World Wonders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {},
+        },
+        plugins: [],
+      }
+    </script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <style>
+    body {
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+      background-color: #F9F8F4; /* Default light theme background */
+      isolation: isolate; /* Create a new stacking context */
+      transition: background-color 0.3s ease;
+    }
+    html.dark body {
+      background-color: #1a1a1a; /* Dark theme background */
+    }
+    body::before {
+      content: '';
+      position: fixed;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      background-image: url('https://kidscampingessentials.com/wp-content/uploads/2019/03/Friends-hikers-sitting-beside-camp-and-tents-in-the-night-900-x-599.jpg');
+      background-size: cover;
+      background-position: center;
+      filter: blur(4px);
+      z-index: -1;
+      transition: filter 0.3s ease;
+    }
+    html.dark body::before {
+      filter: blur(4px) brightness(0.5); /* Dim background in dark mode */
+    }
+    #root {
+      min-height: 100vh;
+    }
+  </style>
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.8.2"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/W3-wish-world-/assets/index-CR2y3_9Q.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
+</html>
